@@ -5,7 +5,7 @@
 
     <!-- CSS is how we style out website! We're including a Boostrap CSS file, as well as one of our own-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="/assets/css/styles.css" /> <!-- you can edit this file and include your own style-->
+    <link href="./assets/css/styles.css" /> <!-- you can edit this file and include your own style-->
     
     <!-- This is som emetadata! It allows us to specify things like keywords and your website's description!-->
     <meta charset="UTF-8">
@@ -18,26 +18,90 @@
 <!-- Anything put in your body is visible on your website!-->
 <body>
 
+    <!-- This is your navbar! It shows links at the top of the page-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">Put your website's name here</a>
+          
+          <!-- This is some Bootstrap magic! It automatically minimizes your navbar on mobile devies-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="/">Link 1</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="/">Link 2</a>
               </li>
           </div>
         </div>
       </nav>
+      <br />
 
-    <h1>This is an example website!</h1>
+      <!-- This is a container! It automatically pushes your content in from the sides!-->
+      <div class="container">
+          <h1>This is an example website!</h1>
+
+          <!-- This is an example of two column layout! It's responsive too!-->
+          <div class="row">
+              <div class="col-12 col-md-8">
+
+                <!-- Here's an example of carousel! It displays multople images and you can include your own-->
+
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <!-- You should swap these to be your own images!-->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/purple1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/purple 2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/purple 3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                <!-- These are placeholder paragraphs-->
+                  <p>Bacon ipsum dolor amet jowl tongue porchetta brisket, salami beef kevin. Filet mignon short ribs porchetta andouille tail frankfurter prosciutto hamburger pork belly shankle sausage spare ribs. Pork belly cupim beef ribs, brisket chicken porchetta frankfurter ribeye tail jowl kielbasa buffalo leberkas bacon short loin. Alcatra andouille pork belly jowl rump. Short loin shank meatloaf salami beef ribs. Porchetta brisket pig cow, pork belly fatback prosciutto kevin shoulder venison meatball ground round jerky ham.</p>
+                  <p>Bacon ipsum dolor amet jowl tongue porchetta brisket, salami beef kevin. Filet mignon short ribs porchetta andouille tail frankfurter prosciutto hamburger pork belly shankle sausage spare ribs. Pork belly cupim beef ribs, brisket chicken porchetta frankfurter ribeye tail jowl kielbasa buffalo leberkas bacon short loin. Alcatra andouille pork belly jowl rump. Short loin shank meatloaf salami beef ribs. Porchetta brisket pig cow, pork belly fatback prosciutto kevin shoulder venison meatball ground round jerky ham.</p>
+                  <p>Buffalo frankfurter capicola, short ribs spare ribs corned beef pork chop. Prosciutto ham hock tongue, fatback ball tip landjaeger frankfurter beef venison pancetta picanha beef ribs sirloin kevin tail. Sausage chicken bacon sirloin venison leberkas porchetta drumstick shank. Meatball t-bone sirloin salami beef andouille bresaola. T-bone leberkas cupim, beef ribs beef swine buffalo. Fatback tenderloin flank chicken turducken porchetta. Hamburger pork loin andouille ball tip sausage buffalo capicola sirloin shankle kevin filet mignon salami.</p>
+              </div>
+              <div class="col-12 col-md-4>"
+                <p>THIS IS A SIDEBAR</p>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="./images/Hailey.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">You could include some info about who you are</p>
+                </div>
+              </div>
+              <br />
+
+              <!-- You might want to include some links in your sidebar too!-->
+              <ul class="list-group">
+                  <li class="list-group-item"><a href="https://organize.mlh.io/participants/events/7118-init-2022-day-1"></a></li>
+              </ul>
+          </div>
+      </div>
+
 
     <!-- This is Bootstrap's Javascript! Including it is what makes our website's interactive stuff work!-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- You might want to include your own scripts too! We've included an example file with one in here!-->
+    <script src="js/scripts.js"></script>
 </body>
